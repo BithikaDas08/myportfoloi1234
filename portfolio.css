@@ -561,11 +561,10 @@ html {
 }
 
 .radial-bars {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
+  display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 40px;
+    margin-top:20px
 }
 
 .radial-bar {
@@ -677,10 +676,12 @@ html {
    /* grid-template-columns: repeat(auto-fit,minmax(359px, auto));*/
    grid-template-columns: repeat(2,1fr);
    gap: 40px;
+    justify-items:center;
 }
 @media (max-width:768px) {
     .portfolio-content{
         grid-template-columns: 1fr;
+       
     }
 }
 .row{
@@ -942,6 +943,7 @@ html {
     justify-content: flex-start;
   }
 }
+
 
 
 

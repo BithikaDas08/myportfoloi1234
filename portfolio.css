@@ -155,14 +155,17 @@ body {
     gap:1.5rem
 }
 
-.about-img img {
-    padding-bottom: 10%;
-    max-width: 100%;
-    height: auto;
-    width: 60%;
-    border-radius: 10px;
-   margin-left: 90px;
-   
+.about-img img {  
+    width: 90vw;       
+    height: auto;      
+    max-width: 500px;   
+    border-radius: 10px; 
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-text h2 {
@@ -187,7 +190,12 @@ body {
     line-height: 1.5;
     margin-bottom: 4rem;
 }
-
+@media (max-width: 768px) {
+    .about-img img {
+        width: 100vw;
+        border-radius: 0; /* optional for full bleed look */
+    }
+}
 @media (max-width: 768px) {
   .about {
     display: block;
@@ -345,7 +353,7 @@ section {
     margin-left: 0;
 }
 .heading1{
-    text-align: left;
+    text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness:5px;
@@ -551,13 +559,14 @@ html {
 }
 
 .heading {
+  text-align: center;
   color: #fff;
   font-size: 30px;
   margin-bottom: 100px;
   text-decoration: underline; 
   text-underline-offset: 10px;
    text-decoration-thickness:5px;
- /text-align: center;/
+
 }
 
 .radial-bars {
@@ -943,6 +952,7 @@ html {
     justify-content: flex-start;
   }
 }
+
 
 
 

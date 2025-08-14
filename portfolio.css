@@ -352,12 +352,16 @@ section {
     padding: 75px 90px;
     margin-left: 0;
 }
-.heading1{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness:5px;
-    margin-bottom: 50px;
+
+.heading1 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 100px;
+  text-decoration: underline; 
+  text-underline-offset: 10px;
+   text-decoration-thickness:5px;
+
 }
 .bar {
     font-size: 23px;
@@ -559,12 +563,15 @@ html {
 }
 
 
-.heading{
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness:5px;
-    margin-bottom: 50px;
+.heading {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 100px;
+  text-decoration: underline; 
+  text-underline-offset: 10px;
+   text-decoration-thickness:5px;
+
 }
 
 .radial-bars {
@@ -950,6 +957,7 @@ html {
     justify-content: flex-start;
   }
 }
+
 
 
 

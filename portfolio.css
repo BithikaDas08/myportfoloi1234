@@ -345,7 +345,7 @@ section {
     margin-left: 0;
 }
 .heading1{
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness:5px;
@@ -366,6 +366,7 @@ section {
 }
 .technical-bars .bar .info {
     margin-bottom: 5px;
+    text-align:left
 }
 .technical-bars .bar .info span {
     font-size: 17px;
@@ -375,7 +376,7 @@ section {
 }
 .technical-bars .bar .progress-line {
     position: relative;
-    border-radius: 10px;
+    border-radius: 30px;
     width: 100%;
     height: 5px;
     background-color: #000;
@@ -385,6 +386,7 @@ section {
     
    
 }
+
 @keyframes animate {
     100%{
         transform: scaleX(1);
@@ -402,6 +404,9 @@ section {
 .technical-bars {
   width: 45%;
   text-align: left;
+  justify-content:flex-start;
+  margin-left:0;
+  margin-right:auto;
 }
 
 .radial-bars {
@@ -479,10 +484,12 @@ section {
 
 .skills-container1 {
     display:flex;
-    justify-content: space-between;
+    flex-direction:row;
+    justify-content: space-start;
     align-items: flex-start;
     flex-wrap:wrap;
-    padding-left: 40px 20px;
+    padding: 20px;
+    gap:20px;
 }
 .radial-bars,
 .technical-bars {
@@ -496,6 +503,27 @@ section {
 @keyframes showText {
     to {
         opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .container1 {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .skills-container1 {
+        flex-direction: column;  /* stack skills vertically */
+        align-items: flex-start; /* align to the left */
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .technical-bars {
+        width: 100%;  /* take full width on mobile */
+        margin-left: 0;
+        text-align: left;
     }
 }
 
@@ -513,38 +541,12 @@ section {
 
 
 
-@media (max-width: 768px) {
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .technical-bars,
-  .radial-bars {
-    width: 90%;
-    margin-bottom: 30px;
-  }
-
-  .technical-bars {
-    text-align: center;
-  }
-
-  .bar {
-    justify-content: center;
-  }
-}
-
-  .technical-skills {
-    order: 1;
-    text-align: center;
-  }
-}
 
 html {
     scroll-behavior: smooth;
 }
 .skills {
-  text-align: center;
+  text-align: left;
   padding: 70px 0;
 }
 
@@ -940,6 +942,7 @@ html {
     justify-content: flex-start;
   }
 }
+
 
 
 

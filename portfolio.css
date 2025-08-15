@@ -363,6 +363,9 @@ section {
    text-decoration-thickness:5px;
 
 }
+.technical-skills-heading {
+    white-space: nowrap;
+}
 .bar {
     font-size: 23px;
 }
@@ -957,6 +960,7 @@ html {
     justify-content: flex-start;
   }
 }
+
 
 
 
